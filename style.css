@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: black;
+    z-index: 10;
+    top: 0;
+    position: sticky;
+}
+.brand{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Playwrite IT Moderna", cursive;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+}
+.brand.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.listitem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 35px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-out, transform 0.8s ease-out
+}
+.listitem.show{
+    opacity: 1;
+    transform: translateY(0);
+    }
+.list1{
+    color: black;
+}
+.list1:hover{
+    text-decoration: none;
+    color: black;
+}
+.list2{
+    color: black;
+}
+.list2:hover{
+    text-decoration: none;
+    color: black;
+}
+.list3{
+    color: black;
+}
+.list3:hover{
+    text-decoration: none;
+    color: black;
+}
+.list4{
+    color: black;
+}
+.list4:hover{
+    text-decoration: none;
+    color: black;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.fa-magnifying-glass{
+    color: black;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+}
+.fa-magnifying-glass.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.fa-cart-shopping{
+    color: black;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+}
+.fa-cart-shopping.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.head2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+.offer-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.timer {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.offer-img {
+    width: 400px;
+    height: 300px;
+    opacity: 0;
+    transform: translateX(150px);
+    transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+}
+.offer-img.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+.open {
+    display: none;
+    width: 1000px;
+    height: 400px;
+    margin-top: 20px;
+}
+.para15{
+    font-size: 25px;
+}
+.aboutus{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+}
+.aboutus.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+.footer-logo h1{
+    font-size: 20px !important;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-top h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.footer-logo .brand {
+    font-size: 15px;
+    color: #fff;
+}
+
+.footer-links ul,
+.customer-support ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.customer-support ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a,
+.customer-support ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.social-links {
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+.customer-support {
+    margin-bottom: 1.5rem;
+}
+
+.newsletter {
+    margin-bottom: 1.5rem;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5rem;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    width: 200px;
+}
+
+.newsletter button {
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+    background-color: #f58324;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #e56e0d;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom .company-info {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-bottom .company-info h3 {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom .company-info p {
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+}
+
+.footer-bottom .copyright,
+.footer-bottom .privacy-policy {
+    font-size: 15px;
+}
+.carousel {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-track {
+    display: flex;
+}
+
+.carousel-card {
+    min-width: calc(100% / 3); /* Display 3 cards at a time */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.card-content {
+    position: relative;
+}
+.head3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+.card-content img {
+    width: 100%;
+    border-radius: 10px;
+    height: 400px;
+}
+.head4{
+    font-size: 30px;
+    font-weight: 700;
+}
+.head5{
+    font-size: 30px;
+    font-weight: 700;
+}
+.para{
+    font-size: 20px;
+    width: 800px;
+    background-color: antiquewhite;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 4em;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    cursor: pointer;
+}
+
+.card-content:hover .hover-overlay {
+    opacity: 1;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+.contactus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.para2{
+    font-size: 18px;
+}
+.para3{
+    font-size: 18px;
+}
+.para4{
+    font-size: 18px;
+}
+.line1{
+    width: 2px;
+    height: 80px;
+    background-color: green;
+}
+.line2{
+    width: 3px;
+    height: 80px;
+    background-color: green;
+}
+.line3{
+    width: 3px;
+    height: 80px;
+    background-color: green;
+}
+/* Responsive design */
+@media screen and (max-width: 400px ) {
+    body{
+        width: 400px;
+    }
+    .nav{
+        display: flex;
+       justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        color: black;
+        z-index: 10;
+        top: 0;
+        position: sticky;
+    }
+    .brand{
+        font-size: 35px;
+        font-weight: 700;
+        font-family: "Playwrite IT Moderna", cursive;
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+    }
+    .brand.show{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .listitem{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center !important;
+        font-size: 12px;
+        font-weight: 600;
+        gap: 25px;
+        margin-top: 10px;
+    }
+    .list1{
+        color: black;
+    }
+    .list1:hover{
+        text-decoration: none;
+        color: black;
+    }
+    .list2{
+        color: black;
+    }
+    .list2:hover{
+        text-decoration: none;
+        color: black;
+    }
+    .list3{
+        color: black;
+    }
+    .list3:hover{
+        text-decoration: none;
+        color: black;
+    }
+    .list4{
+        color: black;
+    }
+    .list4:hover{
+        text-decoration: none;
+        color: black;
+    }
+    .logos{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 10px;
+        align-items: center !important;
+    }
+    .fa-magnifying-glass{
+        color: black;
+        font-size: 10px;
+    }
+    .fa-cart-shopping{
+        color: black;
+        font-size: 10px;
+    }
+    .brandname{
+        font-size: 20px !important;
+        font-weight: 700;
+        font-family: "Playwrite IT Moderna", cursive;
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+    }
+    .head2{
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Playfair Display", serif;
+    }
+    .offer-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .timer {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .offer-img {
+        width: 100px;
+        height: 100px;
+    }
+    .open {
+        display: none;
+        width: 380px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .para15{
+        font-size: 15px;
+    }
+    /* Footer styles */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 2rem 20px;
+        text-align: center;
+    }
+    .footer-logo h1{
+        font-size: 20px !important;
+    }
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-top h3 {
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-logo .brand {
+        font-size: 15px;
+        color: #fff;
+    }
+    
+    .footer-links ul,
+    .customer-support ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer-links ul li,
+    .customer-support ul li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-links ul li a,
+    .customer-support ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    .social-links {
+        margin-bottom: 1.5rem;
+    }
+    
+    .social-links a {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+        margin-right: 1rem;
+    }
+    .brandname.show{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .social-links a:hover {
+        opacity: 0.8;
+    }
+    
+    .customer-support {
+        margin-bottom: 1.5rem;
+    }
+    
+    .newsletter {
+        margin-bottom: 1.5rem;
+    }
+    
+    .newsletter form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .newsletter input[type="email"] {
+        padding: 0.5rem;
+        font-size: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 0.5rem;
+        width: 200px;
+    }
+    
+    .newsletter button {
+        padding: 0.5rem 1rem;
+        font-size: 15px;
+        background-color: #f58324;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .newsletter button:hover {
+        background-color: #e56e0d;
+    }
+    
+    .footer-bottom {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer-bottom .company-info {
+        flex: 1;
+        text-align: left;
+    }
+    
+    .footer-bottom .company-info h3 {
+        color: #fff;
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-bottom .company-info p {
+        margin-bottom: 0.5rem;
+        font-size: 15px;
+    }
+    
+    .footer-bottom .copyright,
+    .footer-bottom .privacy-policy {
+        font-size: 15px;
+    }
+    .card-content img {
+        width: 100%;
+        border-radius: 10px;
+        height: 280px;
+    }
+    .para{
+        font-size: 20px;
+        width: 300px;
+        background-color: antiquewhite;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .contactus{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    .line1{
+        display: none;
+    }
+    .line2{
+        display: none;
+    }
+    .line3{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-top .footer-links,
+    .footer-top .social-links,
+    .footer-top .customer-support,
+    .footer-top .newsletter {
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-top h3 {
+        margin-top: 1rem;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter input[type="email"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
